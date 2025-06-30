@@ -56,7 +56,7 @@ const Contact = () => {
                 )
             }
 
-            <div className='flex gap-6'>
+            <div className='flex lg:flex-row md:flex-row flex-col gap-6'>
                 {/* Contact Info Section */}
                 <div className='space-y-5 bg-gray-50 p-3'>
                     <p className='flex items-center gap-2'><MdEmail /> jaber.ahmed4770@gmail.com</p>

@@ -47,9 +47,9 @@ const Projects = () => {
                 {projects.map((project, index) => (
                     <div
                         key={index}
-                        className="bg-white shadow-md rounded-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow duration-300 flex gap-4"
+                        className="bg-white shadow-md rounded-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow duration-300 flex lg:flex-row md:flex-row flex-col gap-4"
                     >
-                        <img className='w-1/3 rounded-lg' src={project.photo} alt="" />
+                        <img className='lg:w-1/3 md:w-1/3 w-full rounded-lg' src={project.photo} alt="" />
                         <div>
                             <h2 className="text-2xl font-semibold text-blue-600 mb-2">{project.title}</h2>
                             <p className="text-gray-600 mb-4 line-clamp-3">{project.description}</p>

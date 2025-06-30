@@ -10,7 +10,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const Home = () => {
     return (
-        <section id='home' className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 px-6 py-16 mt18">
+        <section id='home' className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 px-6 lg:py-16 md:py-10 py-5 mt-18">
             {/* Background blobs */}
             <div className="absolute w-64 h-64 bg-blue-500 rounded-full top-20 left-20 opacity-20 blur-[60px] z-[-1] animate-float"></div>
             <div className="absolute w-72 h-72 bg-purple-500 rounded-full bottom-20 right-20 opacity-20 blur-[60px] z-[-1] animate-float-reverse"></div>
@@ -19,7 +19,7 @@ const Home = () => {
                 {/* Left Column */}
                 <div className="text-left space-y-5 z-10">
                     
-                    <h1 className="text-5xl md:text-6xl font-bold text-gray-800 leading-tight mb-0 pb-2">
+                    <h1 className="lg:text-5xl md:text-6xl text-4xl font-bold text-gray-800 leading-tight mb-0 pb-2">
                         Hi, <br></br> I'm <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">Jaber Ahmed</span>
                     </h1>
                     <span className='text-2xl font-semibold'>
@@ -46,16 +46,16 @@ const Home = () => {
                             <span className="px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-medium">Cybersecurity</span>
                         </div>
 
-                        <div className="flex gap-4">
+                        <div className="flex gap-4 lg:flex-row md:flex-row flex-col">
                             <a
                                 href="/resume.pdf"
                                 download
-                                className="btn btn-primary px-8 py-3 rounded-full shadow-lg bg-blue-500 hover:shadow-xl transition-all duration-300 flex items-center gap-2"
+                                className="btn px-8 py-3 rounded-full text-white shadow-lg bg-blue-500 hover:bg-white hover:text-blue-500 hover:shadow-xl transition-all duration-300 flex items-center gap-2"
                             >
                                 Download Resume <LuArrowBigDown className='text-2xl' />
                             </a>
                             
-                            <LinkScroll to="projects" smooth={true} duration={500} className="btn btn-outline px-8 py-3 rounded-full border-2 border-gray-300 hover:border-blue-600 hover:bg-blue-500 hover:text-white transition-all duration-300 flex items-center gap-2">
+                            <LinkScroll to="projects" smooth={true} duration={500} className="btn  px-8 py-3 rounded-full border-2 border-gray-300 hover:border-blue-600 hover:bg-blue-500 hover:text-white transition-all duration-300 flex items-center gap-2">
                                 My Projects <Code />
                             </LinkScroll>
                             
