@@ -23,8 +23,7 @@ const Home = () => {
                     {/* <TypingTitle></TypingTitle> */}
 
                     <p className="text-xl text-gray-600">
-                        A passionate MERN Stack Developer with a strong interest in web development and ethical hacking.
-                        I enjoy building modern web applications. With foundational knowledge in web penetration testing and cybersecurity.
+                        A passionate MERN Stack Developer with a strong interest in web development and ethical hacking. I enjoy building modern web applications and have a solid foundation in web penetration testing and cybersecurity.
                     </p>
 
                     <div className="py-4">
@@ -48,7 +47,7 @@ const Home = () => {
                     </div>
 
                     <div className="flex gap-4">
-                        <Link
+                        <a
                             href="https://github.com/Jaber4770"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -57,8 +56,8 @@ const Home = () => {
                             <a>
                                 <Github className="w-8 h-8 hover:text-gray-500 transition-colors duration-300" />
                             </a>
-                        </Link>
-                        <Link
+                        </a>
+                        <a
                             href="https://www.linkedin.com/in/jaber-ahmed-7175a11b0/"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -67,7 +66,7 @@ const Home = () => {
                             <a>
                                 <Linkedin className="w-8 h-8 hover:text-blue-600 transition-colors duration-300" />
                             </a>
-                        </Link>
+                        </a>
 
 
 
