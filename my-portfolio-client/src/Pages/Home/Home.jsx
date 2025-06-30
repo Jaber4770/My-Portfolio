@@ -3,6 +3,7 @@ import { ArrowRight, Code, Github, Linkedin } from 'lucide-react';
 import './Home.css'
 import { Link } from 'react-router';
 import { Link as LinkScroll } from 'react-scroll';
+import { LuArrowBigDown } from 'react-icons/lu';
 // import TypingTitle from './TypingTitle';
 
 const Home = () => {
@@ -23,7 +24,7 @@ const Home = () => {
                     {/* <TypingTitle></TypingTitle> */}
 
                     <p className="text-xl text-gray-600">
-                        A passionate MERN Stack Developer with a strong interest in web development and ethical hacking. I enjoy building modern web applications and have a solid foundation in web penetration testing and cybersecurity.
+                        A passionate Full Stack Developer with a strong interest in web development and ethical hacking. I enjoy building modern web applications and have a solid foundation in web penetration testing and cybersecurity.
                     </p>
 
                     <div className="py-4">
@@ -35,11 +36,15 @@ const Home = () => {
                         </div>
 
                         <div className="flex gap-4">
-                            <LinkScroll to="contact" smooth={true} duration={500} className="cursor-pointer btn btn-primary px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2">
-                                Contact <ArrowRight />
-                            </LinkScroll>
+                            <a
+                                href="/resume.pdf"
+                                download
+                                className="btn btn-primary px-8 py-3 rounded-full shadow-lg bg-blue-500 hover:shadow-xl transition-all duration-300 flex items-center gap-2"
+                            >
+                                Download Resume <LuArrowBigDown className='text-2xl' />
+                            </a>
                             
-                            <LinkScroll to="projects" smooth={true} duration={500} className="btn btn-outline px-8 py-3 rounded-full border-2 border-gray-300 hover:border-blue-500 transition-all duration-300 flex items-center gap-2">
+                            <LinkScroll to="projects" smooth={true} duration={500} className="btn btn-outline px-8 py-3 rounded-full border-2 border-gray-300 hover:border-blue-600 hover:bg-blue-500 hover:text-white transition-all duration-300 flex items-center gap-2">
                                 My Projects <Code />
                             </LinkScroll>
                             
@@ -52,6 +57,7 @@ const Home = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="GitHub"
+                            className='border-1 p-3 rounded-full hover:border-gray-500'
                         >
                             <a>
                                 <Github className="w-8 h-8 hover:text-gray-500 transition-colors duration-300" />
@@ -62,6 +68,7 @@ const Home = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="LinkedIn"
+                            className='border-1 p-3 rounded-full hover:border-blue-500'
                         >
                             <a>
                                 <Linkedin className="w-8 h-8 hover:text-blue-600 transition-colors duration-300" />
