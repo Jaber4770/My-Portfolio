@@ -2,11 +2,12 @@ import React from 'react';
 import { ArrowRight, Code, Github, Linkedin } from 'lucide-react';
 import './Home.css'
 import { Link } from 'react-router';
+import { Link as LinkScroll } from 'react-scroll';
 // import TypingTitle from './TypingTitle';
 
 const Home = () => {
     return (
-        <section id='home' className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 px-6 py-16 mt-14">
+        <section id='home' className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 px-6 py-16 mt18">
             {/* Background blobs */}
             <div className="absolute w-64 h-64 bg-blue-500 rounded-full top-20 left-20 opacity-20 blur-[60px] z-[-1] animate-float"></div>
             <div className="absolute w-72 h-72 bg-purple-500 rounded-full bottom-20 right-20 opacity-20 blur-[60px] z-[-1] animate-float-reverse"></div>
@@ -14,13 +15,9 @@ const Home = () => {
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
                 {/* Left Column */}
                 <div className="text-left space-y-6 z-10">
-                    <div className="flex items-center gap-3 mb-2">
-                        <div className="w-4 h-4 rounded-full bg-blue-500"></div>
-                        <span className="text-sm font-medium text-blue-600">MERN STACK DEVELOPER</span>
-                    </div>
-
+                    
                     <h1 className="text-5xl md:text-6xl font-bold text-gray-800 leading-tight">
-                        Hi, I'm <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">Jaber Ahmed</span>
+                        Hi, <br></br> I'm <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">Jaber Ahmed</span>
                     </h1>
 
                     {/* <TypingTitle></TypingTitle> */}
@@ -39,16 +36,18 @@ const Home = () => {
                         </div>
 
                         <div className="flex gap-4">
-                            <a href="#contact" className="btn btn-primary px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2">
-                                Contact Me <ArrowRight/> 
-                            </a>
-                            <a href="#projects" className="btn btn-outline px-8 py-3 rounded-full border-2 border-gray-300 hover:border-blue-500 transition-all duration-300 flex items-center gap-2">
+                            <LinkScroll to="contact" smooth={true} duration={500} className="cursor-pointer btn btn-primary px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2">
+                                Contact <ArrowRight />
+                            </LinkScroll>
+                            
+                            <LinkScroll to="projects" smooth={true} duration={500} className="btn btn-outline px-8 py-3 rounded-full border-2 border-gray-300 hover:border-blue-500 transition-all duration-300 flex items-center gap-2">
                                 My Projects <Code />
-                            </a>
+                            </LinkScroll>
+                            
                         </div>
                     </div>
 
-                    <div className="flex gap-4 pt-4">
+                    <div className="flex gap-4">
                         <Link
                             href="https://github.com/Jaber4770"
                             target="_blank"
