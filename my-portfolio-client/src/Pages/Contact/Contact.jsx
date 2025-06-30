@@ -44,7 +44,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="max-w-md mx-auto p-6 bg-base-100 shadow-md rounded-md my-20">
+        <section id='contact' className="max-w-md mx-auto p-6 bg-base-100 shadow-md rounded-md my-20">
             <h2 className="text-3xl font-semibold mb-6 text-center">Contact Me</h2>
             {submitted && (
                 <p className="mb-4 text-green-600 font-medium text-center">

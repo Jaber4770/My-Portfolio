@@ -14,7 +14,8 @@ export const router = createBrowserRouter([
     {
         path: "/",
         element: <RootLayout></RootLayout>,
-        children: [
+        index: true
+        /* children: [
             {
                 path: '/',
                 Component: Home
@@ -39,6 +40,6 @@ export const router = createBrowserRouter([
                 path: 'contact',
                 Component: Contact
             },
-        ]
+        ] */
     },
 ]);

@@ -15,7 +15,7 @@ const Skills = () => {
     ];
 
     return (
-        <section className="max-w-5xl mx-auto px-6 py-12 bg-white rounded-lg shadow-md border border-gray-200 my-20">
+        <section id='skills' className="max-w-5xl mx-auto px-6 py-12 bg-white rounded-lg shadow-md border border-gray-200 my-20">
             <h1 className="text-4xl font-bold mb-8 text-gray-800">My Skills</h1>
             <div className="space-y-6">
                 {skills.map((skill, idx) => (

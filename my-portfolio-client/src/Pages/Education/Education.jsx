@@ -23,7 +23,7 @@ const Education = () => {
     ];
 
     return (
-        <section className="max-w-5xl mx-auto px-6 py-12 bg-white shadow-md rounded-lg border border-gray-200 my-20">
+        <section id='education' className="max-w-5xl mx-auto px-6 py-12 bg-white shadow-md rounded-lg border border-gray-200 my-20">
             <h1 className="text-4xl font-bold text-gray-800 mb-10">Education</h1>
             <div className="space-y-8">
                 {educationData.map((edu, index) => (
