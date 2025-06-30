@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="bg-base-100 fixed top-0 left-0 w-full z-50 shadow-sm">
             <div className="max-w-6xl mx-auto px-4 navbar">
                 <div className="flex-1">
-                    <Link to="/" className="">
+                    <Link to="home" className="cursor-pointer">
                         <span className="font-bold text-4xl bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                             &lt;/JA&gt;
                         </span>

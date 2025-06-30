@@ -4,7 +4,9 @@ import './Home.css'
 import { Link } from 'react-router';
 import { Link as LinkScroll } from 'react-scroll';
 import { LuArrowBigDown } from 'react-icons/lu';
-// import TypingTitle from './TypingTitle';
+import { ReactTyped } from 'react-typed';
+import { Typewriter } from 'react-simple-typewriter';
+
 
 const Home = () => {
     return (
@@ -15,13 +17,22 @@ const Home = () => {
 
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
                 {/* Left Column */}
-                <div className="text-left space-y-6 z-10">
+                <div className="text-left space-y-5 z-10">
                     
-                    <h1 className="text-5xl md:text-6xl font-bold text-gray-800 leading-tight">
+                    <h1 className="text-5xl md:text-6xl font-bold text-gray-800 leading-tight mb-0 pb-2">
                         Hi, <br></br> I'm <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">Jaber Ahmed</span>
                     </h1>
-
-                    {/* <TypingTitle></TypingTitle> */}
+                    <span className='text-2xl font-semibold'>
+                        <Typewriter
+                            words={['Full Stack Web Developer', 'Content Creator', 'Web Penetration Tester']}
+                            loop={true}
+                            cursor
+                            cursorStyle="|"
+                            typeSpeed={70}
+                            deleteSpeed={50}
+                            delaySpeed={1000}
+                        />
+                   </span>
 
                     <p className="text-xl text-gray-600">
                         A passionate Full Stack Developer with a strong interest in web development and ethical hacking. I enjoy building modern web applications and have a solid foundation in web penetration testing and cybersecurity.
